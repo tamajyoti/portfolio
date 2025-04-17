@@ -82,13 +82,16 @@ export default function Home() {
           <div className="grid gap-10 md:grid-cols-2 items-center">
             <div className="space-y-4">
               <p className="text-zinc-700">
-                I'm a passionate Data Engineer with expertise in designing and implementing data pipelines, ETL
-                processes, and data warehousing solutions. With a strong foundation in both software engineering and
-                data science, I bridge the gap between raw data and actionable insights.
+              I’m a results-driven Data Engineer with over a decade of experience designing 
+              and implementing scalable data pipelines, ETL frameworks, and robust data warehousing solutions. 
+              With a unique blend of software engineering discipline and data science acumen, 
+              I specialize in transforming raw data into impactful insights that drive business outcomes.
               </p>
               <p className="text-zinc-700">
-                My experience spans across various industries including finance, healthcare, and e-commerce, where I've
-                successfully delivered scalable data solutions that drive business decisions.
+              My passion lies in working with startups—building data systems from the ground up, defining analytics strategies, 
+              and setting up efficient, scalable infrastructures that evolve with the business. 
+              I’ve successfully led cross-functional teams and delivered value through both optimized 
+              data architecture and complex machine learning pipelines.
               </p>
               <div className="pt-4">
                 <h3 className="text-xl font-semibold text-zinc-900 mb-2">Education</h3>
