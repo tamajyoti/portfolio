@@ -28,7 +28,7 @@ export default function Home() {
           </nav>
           <Button className="bg-red-600 hover:bg-red-700 text-white">
             <Mail className="w-4 h-4 mr-2" />
-            Contact Me
+            +91-9008054298
           </Button>
         </div>
       </header>
@@ -42,16 +42,22 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2 md:gap-10 items-center">
             <div className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                Building Startups set up Data Functions<span className="text-red-500"> and Systems</span>
+                Helping Startups set up <span className="text-red-500"> Data Functions </span>
               </h1>
               <p className="max-w-[600px] text-zinc-300 md:text-xl">
                I help startups design scalable data pipelines, architect real-time analytics systems, and apply machine learning to solve their complex business problems.
               </p>
               <div className="flex flex-col gap-3 min-[400px]:flex-row">
                 <Button className="bg-red-600 hover:bg-red-700 text-white">View Projects</Button>
-                <Button variant="outline" className="border-zinc-700 text-white hover:bg-zinc-700">
+                <Button
+                variant="outline"
+                className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
+                asChild
+              >
+                <a href="/resume.pdf" download>
                   Download Resume
-                </Button>
+                </a>
+              </Button>
               </div>
             </div>
             <div className="flex justify-center">
