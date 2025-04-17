@@ -149,46 +149,54 @@ export default function Home() {
             <div className="mt-2 w-20 h-1 bg-red-600 rounded-full"></div>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Programming Languages",
-                skills: ["Python", "SQL", "Scala", "Java"],
-              },
-              {
-                title: "Big Data Technologies",
-                skills: ["Apache Spark", "Hadoop", "Kafka", "Airflow"],
-              },
-              {
-                title: "Cloud Platforms",
-                skills: ["AWS", "Google Cloud", "Azure", "Snowflake"],
-              },
-              {
-                title: "Databases",
-                skills: ["PostgreSQL", "MongoDB", "Cassandra", "Redis"],
-              },
-              {
-                title: "Data Visualization",
-                skills: ["Tableau", "Power BI", "D3.js", "Matplotlib"],
-              },
-              {
-                title: "DevOps",
-                skills: ["Docker", "Kubernetes", "CI/CD", "Terraform"],
-              },
-            ].map(({ title, skills }) => (
-              <div key={title} className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
-                <h3 className="text-xl font-semibold mb-4 text-zinc-900">{title}</h3>
-                <div className="flex flex-wrap gap-2">
-                  {skills.map(skill => (
-                    <span
-                      key={skill}
-                      className="inline-block px-3 py-1 text-sm font-medium bg-zinc-200 text-zinc-800 rounded-full"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+          {[
+                {
+                  title: "Programming Languages",
+                  skills: ["Python", "SQL", "Scala", "R", "VBA"],
+                },
+                {
+                  title: "Big Data Technologies",
+                  skills: ["Apache Spark", "Hadoop", "Kafka", "Airflow"],
+                },
+                {
+                  title: "Cloud Platforms",
+                  skills: ["AWS", "Snowflake", "Google Cloud", "Azure"],
+                },
+                {
+                  title: "Databases",
+                  skills: ["PostgreSQL", "Redshift", "Snowflake", "MongoDB", "ElasticSearch", "Neo4j"],
+                },
+                {
+                  title: "Data Tools & Visualization",
+                  skills: ["DBT", "Fivetran", "Segment","Helpshift", "Tableau", "Power BI", "Matplotlib"],
+                },
+                {
+                  title: "DevOps",
+                  skills: ["Docker", "Kubernetes", "CI/CD", "Terraform"],
+                },
+                {
+                  title: "Machine Learning",
+                  skills: ["TensorFlow", "PyTorch", "MLflow", "NLP", "LLM"],
+                },
+                {
+                  title: "API Development",
+                  skills: ["REST", "FastAPI", "Flask"],
+                },
+              ].map(({ title, skills }) => (
+                <div key={title} className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
+                  <h3 className="text-xl font-semibold mb-4 text-zinc-900">{title}</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.map(skill => (
+                      <span
+                        key={skill}
+                        className="inline-block px-3 py-1 text-sm font-medium bg-zinc-200 text-zinc-800 rounded-full"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </section>
