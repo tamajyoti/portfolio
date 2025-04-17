@@ -108,10 +108,11 @@ export default function Home() {
               </div>
               <div className="p-6 bg-zinc-100 rounded-lg border border-zinc-200 flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
-                <BrainCircuit className="w-6 h-6 text-red-600" />
+                  <BrainCircuit className="w-6 h-6 text-red-600" />
                 </div>
-                <h3 className="font-medium text-zinc-900">Machine Learning</h3>
+                <h3 className="font-medium text-zinc-900">Data Warehousing</h3>
                 <p className="text-sm text-zinc-600 mt-2">Building and deploying scalable ML pipelines</p>
+              </div>
               <div className="p-6 bg-zinc-100 rounded-lg border border-zinc-200 flex flex-col items-center text-center">
                 <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
                   <Code className="w-6 h-6 text-red-600" />
