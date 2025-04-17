@@ -63,7 +63,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full bg-zinc-800 border-4 border-red-600 overflow-hidden">
-                <Image src="/placeholder.svg?height=320&width=320" alt="Profile" fill className="object-cover" />
+                <Image src="/images/profile_pic.png?height=320&width=320" alt="Profile" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -80,23 +80,22 @@ export default function Home() {
             <div className="mt-2 w-20 h-1 bg-red-600 rounded-full"></div>
           </div>
           <div className="grid gap-10 md:grid-cols-2 items-center">
-            <div className="space-y-4">
-              <p className="text-zinc-700">
-              I’m a results-driven Data Engineer with over a decade of experience designing 
-              and implementing scalable data pipelines, ETL frameworks, and robust data warehousing solutions. 
-              With a unique blend of software engineering discipline and data science acumen, 
-              I specialize in transforming raw data into impactful insights that drive business outcomes.
+          <div className="space-y-4">
+              <p className="text-zinc-700 text-justify">
+                I’m a results-driven Data Engineer with over a decade of experience designing 
+                and implementing scalable data pipelines, ETL frameworks, and robust data warehousing solutions. 
+                With a unique blend of software engineering discipline and data science acumen, I specialize in transforming raw data into impactful insights that drive business outcomes.
               </p>
-              <p className="text-zinc-700">
-              My passion lies in working with startups—building data systems from the ground up, defining analytics strategies, 
-              and setting up efficient, scalable infrastructures that evolve with the business. 
-              I’ve successfully led cross-functional teams and delivered value through both optimized 
-              data architecture and complex machine learning pipelines.
+              <p className="text-zinc-700 text-justify">
+                My passion lies in working with startups—building data systems from the ground up, defining analytics strategies, 
+                and setting up efficient, scalable infrastructures that evolve with the business. 
+                I’ve successfully led cross-functional teams and delivered value through both optimized 
+                data architecture and complex machine learning pipelines.
               </p>
-              <p className="text-zinc-700">
-              Over the years, I’ve worked across a range of industries including finance, adtech, gaming, web3 enabling data-driven decision-making 
-              through high-quality, production-grade solutions. Whether it's architecting a modern data stack 
-              or spearheading end-to-end ML initiatives, I bring a strong execution mindset and a deep commitment to delivering measurable impact.
+              <p className="text-zinc-700 text-justify">
+                Over the years, I’ve worked across a range of industries including finance, adtech, gaming, and web3—enabling data-driven decision-making 
+                through high-quality, production-grade solutions. Whether it's architecting a modern data stack 
+                or spearheading end-to-end ML initiatives, I bring a strong execution mindset and a deep commitment to delivering measurable impact.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
