@@ -10,7 +10,7 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16 px-4 mx-auto md:px-6">
           <div className="flex items-center gap-2">
             <Database className="w-6 h-6 text-red-600" />
-            <span className="text-xl font-bold">DataEngineer</span>
+            <span className="text-xl font-bold">Tamajyoti Dhar</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#about" className="text-zinc-600 hover:text-red-600 transition-colors">
@@ -42,10 +42,10 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2 md:gap-10 items-center">
             <div className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                Data Engineer <span className="text-red-500">Portfolio</span>
+                Building Startups set up Data Functions<span className="text-red-500"> and Systems</span>
               </h1>
               <p className="max-w-[600px] text-zinc-300 md:text-xl">
-                Transforming raw data into valuable insights through efficient pipelines and robust architecture.
+               I help startups design scalable data pipelines, architect real-time analytics systems, and apply machine learning to solve their complex business problems.
               </p>
               <div className="flex flex-col gap-3 min-[400px]:flex-row">
                 <Button className="bg-red-600 hover:bg-red-700 text-white">View Projects</Button>
