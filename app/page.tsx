@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Github, Linkedin, Mail, ExternalLink, Database, Server, Code, BarChart4 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { MessageCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
             </a>
           </nav>
           <Button className="bg-red-600 hover:bg-red-700 text-white">
-            <Mail className="w-4 h-4 mr-2" />
+            <MessageCircle className="w-4 h-4 mr-2 text-green-500" />
             +91-9008054298
           </Button>
         </div>
