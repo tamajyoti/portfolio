@@ -139,72 +139,60 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
+     
       <section id="skills" className="py-16 bg-zinc-100">
         <div className="container px-4 mx-auto md:px-6">
-          <div className="flex flex-col items-center text-center mb-10">
+          <div className="flex flex-col items-center text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-zinc-900">
               Technical <span className="text-red-600">Skills</span>
             </h2>
             <div className="mt-2 w-20 h-1 bg-red-600 rounded-full"></div>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900">Programming Languages</h3>
-              <div className="space-y-3">
-                <SkillBar name="Python" percentage={90} />
-                <SkillBar name="SQL" percentage={95} />
-                <SkillBar name="Scala" percentage={80} />
-                <SkillBar name="Java" percentage={75} />
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "Programming Languages",
+                skills: ["Python", "SQL", "Scala", "Java"],
+              },
+              {
+                title: "Big Data Technologies",
+                skills: ["Apache Spark", "Hadoop", "Kafka", "Airflow"],
+              },
+              {
+                title: "Cloud Platforms",
+                skills: ["AWS", "Google Cloud", "Azure", "Snowflake"],
+              },
+              {
+                title: "Databases",
+                skills: ["PostgreSQL", "MongoDB", "Cassandra", "Redis"],
+              },
+              {
+                title: "Data Visualization",
+                skills: ["Tableau", "Power BI", "D3.js", "Matplotlib"],
+              },
+              {
+                title: "DevOps",
+                skills: ["Docker", "Kubernetes", "CI/CD", "Terraform"],
+              },
+            ].map(({ title, skills }) => (
+              <div key={title} className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
+                <h3 className="text-xl font-semibold mb-4 text-zinc-900">{title}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {skills.map(skill => (
+                    <span
+                      key={skill}
+                      className="inline-block px-3 py-1 text-sm font-medium bg-zinc-200 text-zinc-800 rounded-full"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900">Big Data Technologies</h3>
-              <div className="space-y-3">
-                <SkillBar name="Apache Spark" percentage={85} />
-                <SkillBar name="Hadoop" percentage={80} />
-                <SkillBar name="Kafka" percentage={75} />
-                <SkillBar name="Airflow" percentage={90} />
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900">Cloud Platforms</h3>
-              <div className="space-y-3">
-                <SkillBar name="AWS" percentage={90} />
-                <SkillBar name="Google Cloud" percentage={85} />
-                <SkillBar name="Azure" percentage={75} />
-                <SkillBar name="Snowflake" percentage={80} />
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900">Databases</h3>
-              <div className="space-y-3">
-                <SkillBar name="PostgreSQL" percentage={95} />
-                <SkillBar name="MongoDB" percentage={85} />
-                <SkillBar name="Cassandra" percentage={75} />
-                <SkillBar name="Redis" percentage={80} />
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900">Data Visualization</h3>
-              <div className="space-y-3">
-                <SkillBar name="Tableau" percentage={85} />
-                <SkillBar name="Power BI" percentage={80} />
-                <SkillBar name="D3.js" percentage={70} />
-                <SkillBar name="Matplotlib" percentage={90} />
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-zinc-200">
-              <h3 className="text-xl font-semibold mb-4 text-zinc-900">DevOps</h3>
-              <div className="space-y-3">
-                <SkillBar name="Docker" percentage={90} />
-                <SkillBar name="Kubernetes" percentage={80} />
-                <SkillBar name="CI/CD" percentage={85} />
-                <SkillBar name="Terraform" percentage={75} />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* Projects Section */}
       <section id="projects" className="py-16 bg-white">
@@ -279,7 +267,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-400">Email</div>
-                    <div>contact@dataengineer.com</div>
+                    <div>tamajyoti.dhar@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -288,7 +276,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-400">LinkedIn</div>
-                    <div>linkedin.com/in/dataengineer</div>
+                    <div>https://www.linkedin.com/in/tamajyoti-dhar-6494022b/</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -297,7 +285,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-400">GitHub</div>
-                    <div>github.com/dataengineer</div>
+                    <div>github.com/tamajyoti</div>
                   </div>
                 </div>
               </div>
