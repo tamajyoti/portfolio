@@ -93,19 +93,11 @@ export default function Home() {
               I’ve successfully led cross-functional teams and delivered value through both optimized 
               data architecture and complex machine learning pipelines.
               </p>
-              <div className="pt-4">
-                <h3 className="text-xl font-semibold text-zinc-900 mb-2">Education</h3>
-                <div className="space-y-2">
-                  <div className="p-4 border border-zinc-200 rounded-lg bg-zinc-50">
-                    <div className="font-medium text-zinc-900">Master of Science in Data Engineering</div>
-                    <div className="text-zinc-600">Stanford University, 2018-2020</div>
-                  </div>
-                  <div className="p-4 border border-zinc-200 rounded-lg bg-zinc-50">
-                    <div className="font-medium text-zinc-900">Bachelor of Science in Computer Science</div>
-                    <div className="text-zinc-600">MIT, 2014-2018</div>
-                  </div>
-                </div>
-              </div>
+              <p className="text-zinc-700">
+              Over the years, I’ve worked across a range of industries including finance, adtech, gaming, web3 enabling data-driven decision-making 
+              through high-quality, production-grade solutions. Whether it's architecting a modern data stack 
+              or spearheading end-to-end ML initiatives, I bring a strong execution mindset and a deep commitment to delivering measurable impact.
+              </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-6 bg-zinc-100 rounded-lg border border-zinc-200 flex flex-col items-center text-center">
@@ -365,21 +357,7 @@ export default function Home() {
               <Database className="w-5 h-5 text-red-500" />
               <span className="text-lg font-semibold text-white">DataEngineer</span>
             </div>
-            <div className="flex items-center gap-4">
-              <a href="#" className="text-zinc-400 hover:text-red-500 transition-colors">
-                <Github className="w-5 h-5" />
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a href="#" className="text-zinc-400 hover:text-red-500 transition-colors">
-                <Linkedin className="w-5 h-5" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-              <a href="#" className="text-zinc-400 hover:text-red-500 transition-colors">
-                <Mail className="w-5 h-5" />
-                <span className="sr-only">Email</span>
-              </a>
-            </div>
-            <div className="text-sm">© 2023 DataEngineer. All rights reserved.</div>
+            <div className="text-sm">© 2025 TamajyotiDhar. All rights reserved.</div>
           </div>
         </div>
       </footer>
