@@ -37,7 +37,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-zinc-800 to-zinc-900 text-white">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1600')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('/images/background.webp?height=800&width=1600')] bg-cover bg-center" />
         </div>
         <div className="container relative px-4 mx-auto md:px-6">
           <div className="grid gap-6 md:grid-cols-2 md:gap-10 items-center">
