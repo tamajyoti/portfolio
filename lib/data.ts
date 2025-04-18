@@ -107,17 +107,17 @@ export const skills: Skill[] = [
 // Projects section data
 export const projects: Project[] = [
  {
-   title: "Real-time Analytics Platform",
-   description:
-     "Designed and implemented a real-time analytics platform using Apache Kafka, Spark Streaming, and Elasticsearch to process and visualize streaming data from IoT devices.",
-   tags: ["Kafka", "Spark", "Elasticsearch", "Python"],
-   image: "/placeholder.svg?height=200&width=400",
-   challenges:
-     "Handling millions of events per second while maintaining low latency was a significant challenge. Additionally, ensuring data consistency across the pipeline required careful design.",
-   solution:
-     "Implemented a scalable architecture with Kafka for message queuing, Spark Streaming for real-time processing, and Elasticsearch for fast querying. Used Kafka Connect for reliable data ingestion and custom connectors for data transformation.",
-   outcomes:
-     "Reduced data processing latency from minutes to seconds, enabling real-time decision making. The platform now processes over 10TB of data daily with 99.9% reliability.",
+    title: "Real-time Gaming Event Pipeline",
+    description: 
+      "Built a real-time event processing pipeline for a gaming startup using Kafka, PySpark, and S3 on Kubernetes to process millions of player events per hour for analytics and personalization.",
+    tags: ["Kafka", "PySpark", "S3", "Kubernetes", "Docker", "Gaming"],
+    image: "/placeholder.svg?height=200&width=400",
+    challenges: 
+      "Processing high-volume user events with low latency and limited compute resources, while handling out-of-order data, skewed distributions, and minimizing S3 file fragmentation.",
+    solution: 
+      "Designed a modular pipeline with Kafka for ingestion, PySpark Structured Streaming for real-time transformations, and S3 for tiered storage. Used Kubernetes to orchestrate containerized Spark jobs with autoscaling, dynamic resource allocation, and late event handling through watermarking.",
+    outcomes: 
+      "Achieved 99.9% uptime while processing over ~50 million events daily. Reduced infrastructure cost by 30% using adaptive partitioning and compaction strategies, enabling faster analytics and real-time insights across multiple games."
  },
  {
    title: "Data Warehouse Migration",
@@ -159,31 +159,31 @@ export const projects: Project[] = [
      "Reduced data incidents by 80%, improved data team productivity, and increased trust in data throughout the organization.",
  },
  {
-   title: "Customer 360 Data Platform",
-   description:
-     "Architected a Customer 360 data platform that integrates data from multiple sources to provide a unified view of customer interactions and behavior.",
-   tags: ["AWS", "Glue", "Redshift", "Python"],
-   image: "/placeholder.svg?height=200&width=400",
-   challenges:
-     "Customer data was siloed across multiple systems, making it difficult to get a complete view of customer journeys and behavior patterns.",
-   solution:
-     "Designed a lake house architecture using AWS services, with Glue for ETL, Redshift for analytics, and custom identity resolution algorithms for customer matching.",
-   outcomes:
-     "Enabled personalized marketing campaigns resulting in 25% higher conversion rates and improved customer retention by 15% through better targeting.",
- },
- {
-   title: "Streaming ETL Pipeline",
-   description:
-     "Implemented a streaming ETL pipeline for processing financial transactions in real-time, enabling fraud detection and instant analytics.",
-   tags: ["Flink", "Kafka", "Cassandra", "Scala"],
-   image: "/placeholder.svg?height=200&width=400",
-   challenges:
-     "Processing high-volume financial transactions in real-time with strict latency requirements while ensuring data accuracy and completeness.",
-   solution:
-     "Leveraged Apache Flink for stateful stream processing, Kafka for messaging, and Cassandra for fast writes. Implemented exactly-once processing semantics and sophisticated monitoring.",
-   outcomes:
-     "Reduced fraud detection time from hours to milliseconds, saving the company an estimated $2M annually in fraud prevention. Enabled real-time financial analytics for business users.",
- },
+    title: "Customer 360 Data Platform",
+    description:
+      "Built a Customer 360 data platform for a marketing tech company to unify customer behavior across mobile apps, websites, CRMs, and marketing channels for personalized targeting.",
+    tags: ["Python", "dbt", "Segment", "Redshift", "Airflow", "S3"],
+    image: "/placeholder.svg?height=200&width=400",
+    challenges:
+      "Customer data was fragmented across multiple tools, making it hard to unify identities and understand complete user journeys for effective campaign targeting.",
+    solution:
+      "Ingested customer event data via Segment into S3 and Redshift. Used Python and dbt to model unified customer profiles with custom identity resolution logic based on email, device ID, and behavioral signals. Orchestrated pipelines using Airflow.",
+    outcomes:
+      "Enabled precise audience segmentation and campaign personalization, leading to a 25% lift in conversion rates and 15% improvement in customer retention. Reduced data analyst prep time by 40% through self-serve access to unified profiles.",
+  },
+  {
+    title: "LLM-Powered PII Detection for Enterprise Data Stores",
+    description:
+      "Designed, fine-tuned, and deployed an LLM-based system to identify and classify sensitive information such as PII in enterprise data environments, enhancing data governance and compliance.",
+    tags: ["Python", "Hugging Face Transformers", "BERT", "GPT-3", "Docker", "Kubernetes"],
+    image: "/placeholder.svg?height=200&width=400",
+    challenges:
+      "Enterprise data was stored across disparate systems with inconsistent formats, making it difficult to detect personally identifiable information (PII) at scale with high precision.",
+    solution:
+      "Fine-tuned transformer models like BERT and GPT-3 on labeled cybersecurity and compliance datasets. Applied NLP techniques such as Named Entity Recognition and token classification to scan and tag sensitive data across structured and unstructured sources.",
+    outcomes:
+      "Achieved over 91% precision in identifying PII, reducing compliance audit preparation time by 60% and significantly lowering the risk of data breaches. Integrated into automated data monitoring pipelines for continuous protection.",
+  },
 ];
 
 
