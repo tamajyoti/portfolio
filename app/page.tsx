@@ -237,143 +237,72 @@ export default function Home() {
 
 
      <section id="contact" className="py-16 bg-zinc-900 text-white">
-       <div className="container px-4 mx-auto md:px-6">
-         <div className="flex flex-col items-center text-center mb-10">
-           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-             Get In <span className="text-red-500">Touch</span>
-           </h2>
-           <div className="mt-2 w-20 h-1 bg-red-500 rounded-full"></div>
-         </div>
-         <div className="grid gap-10 md:grid-cols-2">
-           <div className="space-y-6">
-             <h3 className="text-2xl font-semibold">Contact Information</h3>
-             <p className="text-zinc-300">
-               I'm currently available for freelance work and full-time
-               positions. Feel free to reach out if you have a project that
-               needs data engineering expertise.
-             </p>
-             <div className="space-y-4">
-               <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 rounded-full bg-red-600/20 flex items-center justify-center">
-                   <Mail className="w-5 h-5 text-red-500" />
-                 </div>
-                 <div className="flex-1">
-                   <div className="text-sm text-zinc-400">Email</div>
-                   <a
-                     href={`mailto:${personalInfo.email}`}
-                     className="transition-colors hover:text-red-400 flex items-center"
-                   >
-                     {personalInfo.email}
-                   </a>
-                 </div>
-               </div>
-               <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 rounded-full bg-red-600/20 flex items-center justify-center">
-                   <Linkedin className="w-5 h-5 text-red-500" />
-                 </div>
-                 <div className="flex-1">
-                   <div className="text-sm text-zinc-400">LinkedIn</div>
-                   <a
-                     href={personalInfo.linkedin}
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="transition-colors hover:text-red-400 flex items-center"
-                   >
-                     <span className="truncate">
-                       {personalInfo.linkedin.replace("https://www.", "")}
-                     </span>
-                     <ExternalLink className="w-3 h-3 ml-2 text-zinc-500" />
-                   </a>
-                 </div>
-               </div>
-               <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 rounded-full bg-red-600/20 flex items-center justify-center">
-                   <Github className="w-5 h-5 text-red-500" />
-                 </div>
-                 <div className="flex-1">
-                   <div className="text-sm text-zinc-400">GitHub</div>
-                   <a
-                     href={`https://${personalInfo.github}`}
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="transition-colors hover:text-red-400 flex items-center"
-                   >
-                     {personalInfo.github}
-                     <ExternalLink className="w-3 h-3 ml-2 text-zinc-500" />
-                   </a>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div className="bg-zinc-800 p-6 rounded-lg">
-             <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
-             <form className="space-y-4">
-               <div className="grid gap-4 sm:grid-cols-2">
-                 <div className="space-y-2">
-                   <label
-                     htmlFor="name"
-                     className="text-sm font-medium text-zinc-300"
-                   >
-                     Name
-                   </label>
-                   <input
-                     id="name"
-                     type="text"
-                     className="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
-                     placeholder="Your name"
-                   />
-                 </div>
-                 <div className="space-y-2">
-                   <label
-                     htmlFor="email"
-                     className="text-sm font-medium text-zinc-300"
-                   >
-                     Email
-                   </label>
-                   <input
-                     id="email"
-                     type="email"
-                     className="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
-                     placeholder="Your email"
-                   />
-                 </div>
-               </div>
-               <div className="space-y-2">
-                 <label
-                   htmlFor="subject"
-                   className="text-sm font-medium text-zinc-300"
-                 >
-                   Subject
-                 </label>
-                 <input
-                   id="subject"
-                   type="text"
-                   className="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
-                   placeholder="Subject"
-                 />
-               </div>
-               <div className="space-y-2">
-                 <label
-                   htmlFor="message"
-                   className="text-sm font-medium text-zinc-300"
-                 >
-                   Message
-                 </label>
-                 <textarea
-                   id="message"
-                   rows={4}
-                   className="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
-                   placeholder="Your message"
-                 />
-               </div>
-               <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-                 Send Message
-               </Button>
-             </form>
-           </div>
-         </div>
-       </div>
-     </section>
+  <div className="container px-4 mx-auto md:px-6">
+    <div className="flex flex-col items-center text-center mb-10">
+      <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        Get In <span className="text-red-500">Touch</span>
+      </h2>
+      <div className="mt-2 w-20 h-1 bg-red-500 rounded-full" />
+      <p className="mt-4 max-w-xl text-zinc-300">
+        Whether you're building something ambitious or just want to connect over data, ML, or startup challenges — drop me a line. I’d love to hear from you.
+      </p>
+    </div>
+
+    <div className="max-w-2xl mx-auto space-y-6">
+      <div className="flex items-center gap-4">
+        <div className="w-10 h-10 rounded-full bg-red-600/20 flex items-center justify-center">
+          <Mail className="w-5 h-5 text-red-500" />
+        </div>
+        <div>
+          <div className="text-sm text-zinc-400">Email</div>
+          <a
+            href={`mailto:${personalInfo.email}`}
+            className="text-white hover:text-red-400 transition-colors"
+          >
+            {personalInfo.email}
+          </a>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-4">
+        <div className="w-10 h-10 rounded-full bg-red-600/20 flex items-center justify-center">
+          <Linkedin className="w-5 h-5 text-red-500" />
+        </div>
+        <div>
+          <div className="text-sm text-zinc-400">LinkedIn</div>
+          <a
+            href={personalInfo.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-red-400 transition-colors flex items-center"
+          >
+            <span className="truncate">{personalInfo.linkedin.replace("https://www.", "")}</span>
+            <ExternalLink className="w-3 h-3 ml-2 text-zinc-500" />
+          </a>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-4">
+        <div className="w-10 h-10 rounded-full bg-red-600/20 flex items-center justify-center">
+          <Github className="w-5 h-5 text-red-500" />
+        </div>
+        <div>
+          <div className="text-sm text-zinc-400">GitHub</div>
+          <a
+            href={`https://${personalInfo.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-red-400 transition-colors flex items-center"
+          >
+            {personalInfo.github}
+            <ExternalLink className="w-3 h-3 ml-2 text-zinc-500" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
      {/* Footer */}
@@ -440,14 +369,6 @@ function ProjectCard({
  return (
    <>
      <div className="bg-zinc-50 rounded-lg overflow-hidden border border-zinc-200 transition-all duration-300 hover:shadow-md hover:border-red-200">
-       <div className="relative h-48 overflow-hidden">
-         <Image
-           src={image || "/placeholder.svg"}
-           alt={title}
-           fill
-           className="object-cover transition-transform duration-500 hover:scale-105"
-         />
-       </div>
        <div className="p-6">
          <h3 className="text-xl font-semibold mb-2 text-zinc-900">{title}</h3>
          <p className="text-zinc-600 mb-4">{description}</p>

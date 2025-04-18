@@ -36,7 +36,7 @@ export const aboutFeatures: AboutFeature[] = [
  },
  {
    icon: BrainCircuit,
-   title: "Data Warehousing",
+   title: "Machine Learning",
    description: "Building and deploying scalable ML pipelines",
  },
  {
